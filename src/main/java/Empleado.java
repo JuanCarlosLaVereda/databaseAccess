@@ -87,6 +87,10 @@ public class Empleado {
         this.idEmpleado = idEmpleado;
     }
 
+    public String getDNI() {
+        return DNI;
+    }
+
     @Override
     public String toString() {
         return "Empleado{" +
@@ -99,6 +103,6 @@ public class Empleado {
                 ", fechaNac=" + fechaNac +
                 ", cargo='" + cargo + '\'' +
                 ", domicilio='" + domicilio + '\'' +
-                '}';
+                '}' + "\n";
     }
 }

@@ -279,7 +279,7 @@ public class EmpleadoDB implements AlmacenDatosDB{
             cs.setDate(6, empleado.getFechaNac());
             cs.setString(7, empleado.getCargo());
             cs.setString(8, empleado.getDomicilio());
-
+            cs.registerOutParameter(9, Types.INTEGER); //Recomendable
             cs.executeUpdate();
             resultado = cs.getInt(9);
 
